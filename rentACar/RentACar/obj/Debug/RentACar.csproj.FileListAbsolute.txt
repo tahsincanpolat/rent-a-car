@@ -8,3 +8,11 @@ D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.csproj.Gene
 D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.csproj.CoreCompileInputs.cache
 D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.exe
 D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.pdb
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\bin\Debug\EntityFramework.dll
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\bin\Debug\EntityFramework.SqlServer.dll
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\bin\Debug\EntityFramework.xml
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\bin\Debug\EntityFramework.SqlServer.xml
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.csproj.CopyComplete
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.Migrations.a.resources
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.frmKayitOl.resources
+D:\TahsinCanpolat\C#\rent-a-car\rentACar\RentACar\obj\Debug\RentACar.frmKullaniciGirisi.resources
