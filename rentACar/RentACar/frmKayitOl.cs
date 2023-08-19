@@ -49,6 +49,7 @@ namespace RentACar
                     Adres = txt_adres.Text,
                     Email = txt_email.Text,
                     Telefon = txt_telefon.Text
+
                 };
 
                 db.Yoneticilers.Add(yoneticiler); // ORM 
