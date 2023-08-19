@@ -44,7 +44,7 @@
             this.btn_giris.TabIndex = 0;
             this.btn_giris.Text = "Giriş Yap";
             this.btn_giris.UseVisualStyleBackColor = true;
-            this.btn_giris.Click += new System.EventHandler(this.button1_Click);
+            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
             // 
             // linklbl_kayit
             // 

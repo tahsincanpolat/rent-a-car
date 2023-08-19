@@ -13,7 +13,7 @@ namespace RentACar.ORM.Context
         public ProjectContext()
         {
             // Database e bağlanma (Entity Framework)  
-            Database.Connection.ConnectionString = "Server=OGRETMEN;Database=RentACar;uid=sa;pwd=1453";
+            Database.Connection.ConnectionString = "Server=202-HOCAPC;Database=RentACar;uid=sa;pwd=1453";
         }
 
         // DbSet => Database te Tablolara denk gelen kısımları oluşturacağız.

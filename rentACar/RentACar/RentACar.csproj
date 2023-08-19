@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracEkle.Designer.cs">
+      <DependentUpon>frmAracEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKayitOl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     </Compile>
     <Compile Include="frmKullaniciGirisi.Designer.cs">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriPaneli.Designer.cs">
+      <DependentUpon>frmMusteriPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202308130910584_a.cs" />
     <Compile Include="Migrations\202308130910584_a.designer.cs">
@@ -80,11 +92,17 @@
     <Compile Include="ORM\Entity\Yoneticiler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAracEkle.resx">
+      <DependentUpon>frmAracEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKayitOl.resx">
       <DependentUpon>frmKayitOl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKullaniciGirisi.resx">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriPaneli.resx">
+      <DependentUpon>frmMusteriPaneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308130910584_a.resx">
       <DependentUpon>202308130910584_a.cs</DependentUpon>
