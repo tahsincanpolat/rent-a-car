@@ -56,11 +56,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAracDetayVeKirala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracDetayVeKirala.Designer.cs">
+      <DependentUpon>frmAracDetayVeKirala.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAracEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAracEkle.Designer.cs">
       <DependentUpon>frmAracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracListesi.Designer.cs">
+      <DependentUpon>frmAracListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKayitOl.cs">
       <SubType>Form</SubType>
@@ -92,8 +104,19 @@
     <Compile Include="ORM\Entity\Yoneticiler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentACarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentACarDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAracDetayVeKirala.resx">
+      <DependentUpon>frmAracDetayVeKirala.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAracEkle.resx">
       <DependentUpon>frmAracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracListesi.resx">
+      <DependentUpon>frmAracListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKayitOl.resx">
       <DependentUpon>frmKayitOl.cs</DependentUpon>
@@ -126,6 +149,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RentACarDataSet.xsc">
+      <DependentUpon>RentACarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RentACarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentACarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RentACarDataSet.xss">
+      <DependentUpon>RentACarDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

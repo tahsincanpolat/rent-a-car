@@ -218,6 +218,7 @@
             this.btn_resim_yukle.TabIndex = 4;
             this.btn_resim_yukle.Text = "Resim Yükle";
             this.btn_resim_yukle.UseVisualStyleBackColor = true;
+            this.btn_resim_yukle.Click += new System.EventHandler(this.btn_resim_yukle_Click);
             // 
             // btn_arac_ekle
             // 

@@ -18,15 +18,17 @@ namespace RentACar
             InitializeComponent();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tsb_arac_ekle_Click(object sender, EventArgs e)
         {
             frmAracEkle frmAracEkle = new frmAracEkle();
             frmAracEkle.Show();
+        }
+
+        private void tsb_araclarim_Click(object sender, EventArgs e)
+        {
+            frmAracListesi frmAracListesi = new frmAracListesi();
+            frmAracListesi.kid = kid;
+            frmAracListesi.Show();
         }
     }
 }

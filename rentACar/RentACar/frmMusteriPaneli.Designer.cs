@@ -60,7 +60,6 @@
             this.tsb_kiralamalar.Name = "tsb_kiralamalar";
             this.tsb_kiralamalar.Size = new System.Drawing.Size(118, 34);
             this.tsb_kiralamalar.Text = "Kiralamalar";
-            this.tsb_kiralamalar.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // tsb_arac_ekle
             // 
@@ -80,6 +79,7 @@
             this.tsb_araclarim.Name = "tsb_araclarim";
             this.tsb_araclarim.Size = new System.Drawing.Size(104, 34);
             this.tsb_araclarim.Text = "Araçlarım";
+            this.tsb_araclarim.Click += new System.EventHandler(this.tsb_araclarim_Click);
             // 
             // label1
             // 
