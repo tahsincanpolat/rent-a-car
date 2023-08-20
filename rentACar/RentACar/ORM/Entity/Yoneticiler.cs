@@ -26,8 +26,7 @@ namespace RentACar.ORM.Entity
         [Required]
         public string Sifre { get; set; }
 
-        // Arabalar
-
+        List<Arabalar> arabalars = new List<Arabalar>();
 
     }
 }
