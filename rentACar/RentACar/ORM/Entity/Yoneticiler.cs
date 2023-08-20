@@ -28,5 +28,6 @@ namespace RentACar.ORM.Entity
 
         // Arabalar
 
+
     }
 }
