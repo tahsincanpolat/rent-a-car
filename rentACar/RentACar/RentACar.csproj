@@ -80,6 +80,12 @@
     <Compile Include="frmKayitOl.Designer.cs">
       <DependentUpon>frmKayitOl.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKiralamalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiralamalar.Designer.cs">
+      <DependentUpon>frmKiralamalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKullaniciGirisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RentACarDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RentACarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentACarDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAracDetayVeKirala.resx">
       <DependentUpon>frmAracDetayVeKirala.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKayitOl.resx">
       <DependentUpon>frmKayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiralamalar.resx">
+      <DependentUpon>frmKiralamalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKullaniciGirisi.resx">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
@@ -159,6 +173,17 @@
     </None>
     <None Include="RentACarDataSet.xss">
       <DependentUpon>RentACarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RentACarDataSet1.xsc">
+      <DependentUpon>RentACarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RentACarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentACarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RentACarDataSet1.xss">
+      <DependentUpon>RentACarDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

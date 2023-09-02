@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RentACarDataSet1" targetNamespace="http://tempuri.org/RentACarDataSet1.xsd" xmlns:mstns="http://tempuri.org/RentACarDataSet1.xsd" xmlns="http://tempuri.org/RentACarDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RentACarConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RentACarConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RentACar.Properties.Settings.GlobalReference.Default.RentACarConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KiralamasTableAdapter" GeneratorDataComponentClassName="KiralamasTableAdapter" Name="Kiralamas" UserDataComponentName="KiralamasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RentACarConnectionString (Settings)" DbObjectName="RentACar.dbo.Kiralamas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AlisTarihi, TeslimTarihi, KiralamaSuresi, FaturaTutari, AktifMi FROM dbo.Kiralamas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AlisTarihi" DataSetColumn="AlisTarihi" />
+              <Mapping SourceColumn="TeslimTarihi" DataSetColumn="TeslimTarihi" />
+              <Mapping SourceColumn="KiralamaSuresi" DataSetColumn="KiralamaSuresi" />
+              <Mapping SourceColumn="FaturaTutari" DataSetColumn="FaturaTutari" />
+              <Mapping SourceColumn="AktifMi" DataSetColumn="AktifMi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RentACarDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="RentACarDataSet1" msprop:Generator_DataSetName="RentACarDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Kiralamas" msprop:Generator_RowEvHandlerName="KiralamasRowChangeEventHandler" msprop:Generator_RowDeletedName="KiralamasRowDeleted" msprop:Generator_RowDeletingName="KiralamasRowDeleting" msprop:Generator_RowEvArgName="KiralamasRowChangeEvent" msprop:Generator_TablePropName="Kiralamas" msprop:Generator_RowChangedName="KiralamasRowChanged" msprop:Generator_RowChangingName="KiralamasRowChanging" msprop:Generator_TableClassName="KiralamasDataTable" msprop:Generator_RowClassName="KiralamasRow" msprop:Generator_TableVarName="tableKiralamas" msprop:Generator_UserTableName="Kiralamas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlisTarihi" msprop:Generator_ColumnPropNameInRow="AlisTarihi" msprop:Generator_ColumnPropNameInTable="AlisTarihiColumn" msprop:Generator_ColumnVarNameInTable="columnAlisTarihi" msprop:Generator_UserColumnName="AlisTarihi" type="xs:dateTime" />
+              <xs:element name="TeslimTarihi" msprop:Generator_ColumnPropNameInRow="TeslimTarihi" msprop:Generator_ColumnPropNameInTable="TeslimTarihiColumn" msprop:Generator_ColumnVarNameInTable="columnTeslimTarihi" msprop:Generator_UserColumnName="TeslimTarihi" type="xs:dateTime" />
+              <xs:element name="KiralamaSuresi" msprop:Generator_ColumnPropNameInRow="KiralamaSuresi" msprop:Generator_ColumnPropNameInTable="KiralamaSuresiColumn" msprop:Generator_ColumnVarNameInTable="columnKiralamaSuresi" msprop:Generator_UserColumnName="KiralamaSuresi" type="xs:int" minOccurs="0" />
+              <xs:element name="FaturaTutari" msprop:Generator_ColumnPropNameInRow="FaturaTutari" msprop:Generator_ColumnPropNameInTable="FaturaTutariColumn" msprop:Generator_ColumnVarNameInTable="columnFaturaTutari" msprop:Generator_UserColumnName="FaturaTutari" type="xs:double" />
+              <xs:element name="AktifMi" msprop:Generator_ColumnPropNameInRow="AktifMi" msprop:Generator_ColumnPropNameInTable="AktifMiColumn" msprop:Generator_ColumnVarNameInTable="columnAktifMi" msprop:Generator_UserColumnName="AktifMi" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

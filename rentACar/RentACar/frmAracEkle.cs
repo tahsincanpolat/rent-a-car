@@ -16,6 +16,8 @@ namespace RentACar
     public partial class frmAracEkle : Form
     {
         ProjectContext db = new ProjectContext();
+        string base64 = "";
+
         public frmAracEkle()
         {
             InitializeComponent();
@@ -23,12 +25,19 @@ namespace RentACar
 
         private void btn_arac_ekle_Click(object sender, EventArgs e)
         {
-            string base64;
-
-            using (Image image = arabaResim.Image.Clone() as Image)
+            if(arabaResim.Image != null)
             {
-                base64 = ConvertImageToBase64(image);
+                using (Image image = arabaResim.Image.Clone() as Image)
+                {
+                    base64 = ConvertImageToBase64(image);
+                }
             }
+            else
+            {
+                MessageBox.Show("Lütfen Araç resmi ekleyin");
+                return;
+            }
+            
 
             Arabalar arabalar = new Arabalar()
             {

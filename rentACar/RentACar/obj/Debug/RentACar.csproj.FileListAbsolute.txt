@@ -38,3 +38,4 @@ D:\TahsinCanpolat\c#\rentACar\RentACar\obj\Debug\RentACar.frmMusteriPaneli.resou
 D:\TahsinCanpolat\c#\rentACar\RentACar\obj\Debug\RentACar.frmAracEkle.resources
 D:\TahsinCanpolat\c#\rentACar\RentACar\obj\Debug\RentACar.frmAracListesi.resources
 D:\TahsinCanpolat\c#\rentACar\RentACar\obj\Debug\RentACar.frmAracDetayVeKirala.resources
+D:\TahsinCanpolat\c#\rentACar\RentACar\obj\Debug\RentACar.frmKiralamalar.resources

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.arabaResim = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_plaka = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,14 +46,14 @@
             this.lbl_gunluk_fiyat = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_alis_tarihi = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_teslim_tarihi = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_fatura_tutari = new System.Windows.Forms.Label();
             this.btn_kirala = new System.Windows.Forms.Button();
             this.btn_iptal = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabaResim)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,13 +66,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Araç Bilgileri";
             // 
-            // pictureBox1
+            // arabaResim
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(26, 60);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 154);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.arabaResim.Location = new System.Drawing.Point(26, 60);
+            this.arabaResim.Name = "arabaResim";
+            this.arabaResim.Size = new System.Drawing.Size(210, 154);
+            this.arabaResim.TabIndex = 1;
+            this.arabaResim.TabStop = false;
             // 
             // label2
             // 
@@ -227,12 +227,13 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Alış Tarihi:";
             // 
-            // dateTimePicker1
+            // dtp_alis_tarihi
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(347, 83);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(214, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dtp_alis_tarihi.Location = new System.Drawing.Point(347, 83);
+            this.dtp_alis_tarihi.Name = "dtp_alis_tarihi";
+            this.dtp_alis_tarihi.Size = new System.Drawing.Size(214, 20);
+            this.dtp_alis_tarihi.TabIndex = 4;
+            this.dtp_alis_tarihi.ValueChanged += new System.EventHandler(this.dtp_alis_tarihi_ValueChanged);
             // 
             // label8
             // 
@@ -244,12 +245,14 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Teslim Tarihi:";
             // 
-            // dateTimePicker2
+            // dtp_teslim_tarihi
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(347, 140);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(214, 20);
-            this.dateTimePicker2.TabIndex = 4;
+            this.dtp_teslim_tarihi.Enabled = false;
+            this.dtp_teslim_tarihi.Location = new System.Drawing.Point(347, 140);
+            this.dtp_teslim_tarihi.Name = "dtp_teslim_tarihi";
+            this.dtp_teslim_tarihi.Size = new System.Drawing.Size(214, 20);
+            this.dtp_teslim_tarihi.TabIndex = 4;
+            this.dtp_teslim_tarihi.ValueChanged += new System.EventHandler(this.dtp_teslim_tarihi_ValueChanged);
             // 
             // label10
             // 
@@ -282,6 +285,7 @@
             this.btn_kirala.TabIndex = 5;
             this.btn_kirala.Text = "Kirala";
             this.btn_kirala.UseVisualStyleBackColor = false;
+            this.btn_kirala.Click += new System.EventHandler(this.btn_kirala_Click);
             // 
             // btn_iptal
             // 
@@ -294,6 +298,7 @@
             this.btn_iptal.TabIndex = 5;
             this.btn_iptal.Text = "İptal";
             this.btn_iptal.UseVisualStyleBackColor = false;
+            this.btn_iptal.Click += new System.EventHandler(this.btn_iptal_Click);
             // 
             // frmAracDetayVeKirala
             // 
@@ -302,8 +307,8 @@
             this.ClientSize = new System.Drawing.Size(800, 490);
             this.Controls.Add(this.btn_iptal);
             this.Controls.Add(this.btn_kirala);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp_teslim_tarihi);
+            this.Controls.Add(this.dtp_alis_tarihi);
             this.Controls.Add(this.lbl_gunluk_fiyat);
             this.Controls.Add(this.lbl_yakit_tipi);
             this.Controls.Add(this.label13);
@@ -321,14 +326,14 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.arabaResim);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "frmAracDetayVeKirala";
             this.Text = "frmAracDetayVeKirala";
             this.Load += new System.EventHandler(this.frmAracDetayVeKirala_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arabaResim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,7 +342,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox arabaResim;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_plaka;
         private System.Windows.Forms.Label label3;
@@ -354,9 +359,9 @@
         private System.Windows.Forms.Label lbl_gunluk_fiyat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_alis_tarihi;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtp_teslim_tarihi;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl_fatura_tutari;
         private System.Windows.Forms.Button btn_kirala;

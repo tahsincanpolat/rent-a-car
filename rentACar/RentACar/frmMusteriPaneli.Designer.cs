@@ -60,6 +60,7 @@
             this.tsb_kiralamalar.Name = "tsb_kiralamalar";
             this.tsb_kiralamalar.Size = new System.Drawing.Size(118, 34);
             this.tsb_kiralamalar.Text = "Kiralamalar";
+            this.tsb_kiralamalar.Click += new System.EventHandler(this.tsb_kiralamalar_Click);
             // 
             // tsb_arac_ekle
             // 

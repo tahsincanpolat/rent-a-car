@@ -30,5 +30,11 @@ namespace RentACar
             frmAracListesi.kid = kid;
             frmAracListesi.Show();
         }
+
+        private void tsb_kiralamalar_Click(object sender, EventArgs e)
+        {
+            frmKiralamalar frmKiralamalar = new frmKiralamalar();
+            frmKiralamalar.Show();
+        }
     }
 }
