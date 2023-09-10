@@ -18,6 +18,7 @@ namespace RentACar
         public frmKayitOl()
         {
 
+
             InitializeComponent();
         }
 
