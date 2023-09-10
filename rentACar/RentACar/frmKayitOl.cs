@@ -17,6 +17,7 @@ namespace RentACar
         ProjectContext db = new ProjectContext();
         public frmKayitOl()
         {
+
             InitializeComponent();
         }
 
